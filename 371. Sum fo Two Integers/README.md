@@ -3,6 +3,7 @@ Given two integers `a `and `b`, return the sum of the two integers without using
 
 ### Approach 1
 We use the relationship:
+
 $$
 a+b=\ln(e^{a+b})=\ln(e^a\cdot e^b)
 $$

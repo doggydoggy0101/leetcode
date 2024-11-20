@@ -8,7 +8,7 @@ from checker import runTestCases
 
 
 def getSum(a: int, b: int) -> int:
-    return math.log(math.exp(a) * math.exp(b))
+    return math.log(2**a * 2**b, 2)
 
 
 def main():

@@ -6,6 +6,9 @@
 # - `list_test_case` - List of turples of input/output.
 def runTestCases(fn_solution, list_test_case):
     for idx, (data, expected) in enumerate(list_test_case):
+        # ensure data is a tuple to avoid unpacking list inputs
+        if not isinstance(data, tuple):
+            data = (data,)
         try:
             result = fn_solution(*data)  # unpack inputs
             if result == expected:

@@ -8,10 +8,11 @@ Return the *maximum profit* you can achieve from this transaction. If you cannot
 ### Solution
 Consider a list of prices $\\{p_1,\dots,p_i,\dots,p_j,\dots,p_n\\}$ and suppose that $(p_i,p_j)$ is the solution, i.e., $p_j-p_i$ is the maximum profit. Then the following properties holds:
 
-- $p_1,\dots,p_{i-1}$ cannot be smaller than $p_i$, otherwise $p_i$ will not be the solution. Therefore, we try to find the smallest $p$ starting from $p_1$.
-- $p_{i+1},\dots,p_{j-1}$ cannot be smaller than $p_i$ either, otherwise $p_i$ will not be the solution. Therefore, we try to find the largest gap given $p_i$.
+- $p_1,\dots,p_{i-1}$ cannot be smaller than $p_i$, otherwise $p_i$ will not be the solution. Therefore, we try to find potential $p_i$ starting from $p_1$.
+- $p_{i+1},\dots,p_{j-1}, p_{j+1},\dots, p_n$ cannot be larger than $p_j$, otherwise $p_j$ will not be the solution. Therefore, we try to find the largest gap given some potential $p_i$.
+- $p_{i+1},\dots,p_{j-1}$ cannot be smaller than $p_i$, otherwise $p_i$ will not be the solution. Therefore, if $p_i$ is the solution, we are guaranteed to find $p_j$ before finding the next potential $p_i$.
 
-Together, we try to find a smaller $p_i$ by the first property, then compute the largest gap with $p_i$, which is guarateed to be the maximum profit by the second property if $p_i$ is the solution. We only need one loop to look through potential $p_i$.
+Together, we try to find a smaller price as a potential $p_i$ by the first property, then compute the largest gap with $p_i$ by the second property. If $p_i$ is the solution, then this process is guaranteed to find the solution by the third property. We only need one loop to look through all potential $p_i$.
 
 ```python
 def maxProfit(prices: List[int]) -> int:

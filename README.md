@@ -15,10 +15,10 @@ We use [ruff](https://github.com/astral-sh/ruff) for formatting, just run `ruff 
 
 ## :art: Array
 
--  [:book: Two Sum](1.%20Two%20Sum/) (accelerate search by hashmap)
--  [:book: Best Time to Buy and Sell Stock](121.%20Best%20Time%20to%20Buy%20and%20Sell%20Stock/) 
+-  [:book: Two Sum](array/1.%20Two%20Sum/) (accelerate search by hashmap)
+-  [:book: Best Time to Buy and Sell Stock](array/121.%20Best%20Time%20to%20Buy%20and%20Sell%20Stock/) 
 
 
 ## :ringed_planet: Binary
 
-- [:book: Sum of Two Integers](371.%20Sum%20fo%20Two%20Integers/) (bit manipulation)
+- [:book: Sum of Two Integers](binary/371.%20Sum%20fo%20Two%20Integers/) (bit manipulation)

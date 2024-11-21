@@ -16,6 +16,7 @@ We use [ruff](https://github.com/astral-sh/ruff) for formatting, just run `ruff 
 ## :art: Array
 
 -  [:book: Two Sum](1.%20Two%20Sum/) (accelerate search by hashmap)
+-  [:book: Best Time to Buy and Sell Stock](121.%20Best%20Time%20to%20Buy%20and%20Sell%20Stock/) 
 
 
 ## :ringed_planet: Binary

@@ -6,7 +6,7 @@ You want to maximize your profit by choosing a **single day** to buy one stock a
 Return the *maximum profit* you can achieve from this transaction. If you cannot achieve any profit, return `0`.
 
 ### Solution
-Consider a list of prices $\{p_1,\dots,p_i,\dots,p_j,\dots,p_n\}$ and suppose that $(p_i,p_j)$ is the solution, i.e., $p_j-p_i$ is the maximum profit. Then the following properties holds:
+Consider a list of prices $\\{p_1,\dots,p_i,\dots,p_j,\dots,p_n\\}$ and suppose that $(p_i,p_j)$ is the solution, i.e., $p_j-p_i$ is the maximum profit. Then the following properties holds:
 
 - $p_1,\dots,p_{i-1}$ cannot be smaller than $p_i$, otherwise $p_i$ will not be the solution. Therefore, we try to find the smallest $p$ starting from $p_1$.
 - $p_{i+1},\dots,p_{j-1}$ cannot be smaller than $p_i$ either, otherwise $p_i$ will not be the solution. Therefore, we try to find the largest gap given $p_i$.

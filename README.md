@@ -23,3 +23,4 @@ We use [ruff](https://github.com/astral-sh/ruff) for formatting, just run `ruff 
 ## :ringed_planet: Binary
 
 - [:book: Sum of Two Integers](binary/371.%20Sum%20fo%20Two%20Integers/) (bit manipulation)
+- [:book: Number of 1 Bits](binary/191.%20Number%20of%201%20Bits/) (bit manipulation)

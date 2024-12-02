@@ -1,4 +1,4 @@
-## :book:Number of 1 Bits
+## :book: Number of 1 Bits
 
 ### Problem
 Given a positive integer `n`, write a function that returns the number of 
